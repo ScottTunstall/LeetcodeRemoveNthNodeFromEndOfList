@@ -1,11 +1,14 @@
 // LeetcodeRemoveNthNodeFromEndOfList.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "Solution.h"
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    auto x = new Solution();
+    x->removeNthFromEnd(new ListNode(1, new ListNode(2)), 1);
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

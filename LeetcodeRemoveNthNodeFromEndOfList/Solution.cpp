@@ -24,6 +24,6 @@ ListNode* Solution::removeNthFromEnd(ListNode* head, int n)
     if (indexOfItemToDelete ==0)
         return head->next;
     
-    vectors[indexOfItemToDelete-1]->next = vectors[indexOfItemToDelete+1];
+    vectors[indexOfItemToDelete-1]->next = vectors[indexOfItemToDelete]->next;
     return head;
 }
